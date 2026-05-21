@@ -1,1 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: #0a0a1f;
+  color: #ffd700;
+  line-height: 1.6;
+}
+
+header {
+  background: #1a0033;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff3333;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff3333;
+  text-shadow: 0 0 10px #ff3333;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://via.placeholder.com/1920x1080/000033/ffd700?text=ONE+PIECE') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px #ff3333;
+}
+
+.section {
+  padding: 100px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dark {
+  background: #1a0033;
+}
+
+.crew-grid, .arc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.crew-card, .arc-card {
+  background: #1f003f;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.4s;
+  border: 2px solid #ffd700;
+}
+
+.crew-card:hover, .arc-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #ff3333;
+}
+
+.crew-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.char {
+  background: #330066;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px solid #ffaa00;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  background: #000;
+  font-size: 0.9rem;
+}
