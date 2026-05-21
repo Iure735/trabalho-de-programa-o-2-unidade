@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Fighter MUGEN Web</title>
+  <style>
+    body { margin:0; background:#000; font-family: Arial; }
+    #game { position:relative; width:800px; margin:20px auto; }
+    canvas { border: 4px solid #fff; image-rendering: pixelated; }
+    #hud {
+      position:absolute; top:10px; left:0; width:100%; color:white;
+      display:flex; justify-content:space-between; padding:0 20px;
+      font-size:20px; text-shadow: 2px 2px 4px black;
+    }
+    #title { text-align:center; color:#ff00ff; margin:10px; }
+  </style>
+</head>
+<body>
+  <h1 id="title">ANIME FIGHTER</h1>
+  <div id="game">
+    <div id="hud">
+      <div>Player 1 - <span id="p1health">100</span>% </div>
+      <div>Player 2 - <span id="p2health">100</span>% </div>
+    </div>
+    <canvas id="canvas" width="800" height="500"></canvas>
+  </div>
 
+  <p style="text-align:center; color:#aaa;">
+    Player 1: WASD + J (soco) K (chute)<br>
+    Player 2: Setas + 1 (soco) 2 (chute)
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
