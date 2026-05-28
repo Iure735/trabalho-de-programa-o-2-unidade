@@ -1,93 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>One Piece - Grand Line Wiki</title>
+  <title>IURE Agro • Agrobusiness Inteligente</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/One_Piece_Logo.svg/512px-One_Piece_Logo.svg.png">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <span>☠️</span> ONE PIECE
-      </div>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#tripulacao">Tripulação</a></li>
-        <li><a href="#personagens">Personagens</a></li>
-        <li><a href="#arcos">Arcos</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="inicio" class="hero">
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-seedling"></i> IURE AGRO
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
     <div class="hero-content">
-      <h1>Estamos indo atrás do One Piece!</h1>
-      <p>Seja bem-vindo ao maior site de fãs de One Piece do Brasil.</p>
-      <button onclick="document.getElementById('tripulacao').scrollIntoView({behavior: 'smooth'})">
-        Conheça a Tripulação
+      <h1>Inovação no Agro Negócio</h1>
+      <p>Tecnologia, sustentabilidade e produtividade para o futuro do campo</p>
+      <button class="btn" onclick="document.getElementById('solucoes').scrollIntoView({behavior: 'smooth'})">
+        Conheça nossas soluções
       </button>
     </div>
   </section>
 
-  <section id="tripulacao" class="section">
-    <h2>A Tripulação do Chapéu de Palha</h2>
-    <div class="crew-grid">
-      <div class="crew-card">
-        <img src="https://via.placeholder.com/300x400/FF0000/FFFFFF?text=Luffy" alt="Luffy">
-        <h3>Monkey D. Luffy</h3>
-        <p>Capitão • Akuma no Mi: Gomu Gomu no Mi</p>
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Sobre a IURE Agro</h2>
+    <p class="sobre-texto">
+      Somos uma empresa especializada em soluções tecnológicas para o agronegócio. 
+      Combinamos inovação, dados e sustentabilidade para aumentar a produtividade e reduzir custos no campo.
+    </p>
+  </section>
+
+  <!-- Soluções -->
+  <section id="solucoes">
+    <h2>Nossas Soluções</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>🚁 Agricultura de Precisão</h3>
+        <p>Monitoramento via drones, mapeamento de solo e aplicação variável de insumos.</p>
       </div>
-      <div class="crew-card">
-        <img src="https://via.placeholder.com/300x400/00FF00/000000?text=Zoro" alt="Zoro">
-        <h3>Roronoa Zoro</h3>
-        <p>Espadachim • 3 Katanas</p>
+
+      <div class="project-card">
+        <h3>📊 Plataforma de Gestão Rural</h3>
+        <p>Controle total da fazenda: estoque, financeiro, clima e produtividade em um só lugar.</p>
       </div>
-      <div class="crew-card">
-        <img src="https://via.placeholder.com/300x400/FFAA00/000000?text=Nami" alt="Nami">
-        <h3>Nami</h3>
-        <p>Navegadora • Clima-tact</p>
-      </div>
-      <div class="crew-card">
-        <img src="https://via.placeholder.com/300x400/00AAFF/000000?text=Sanji" alt="Sanji">
-        <h3>Sanji</h3>
-        <p>Coziheiro • Pernas Black Leg</p>
+
+      <div class="project-card">
+        <h3>🌱 Sustentabilidade Inteligente</h3>
+        <p>Soluções para redução de emissões, economia de água e rastreabilidade blockchain.</p>
       </div>
     </div>
   </section>
 
-  <section id="personagens" class="section dark">
-    <h2>Personagens Icônicos</h2>
-    <div class="characters">
-      <div class="char">Shanks</div>
-      <div class="char">Gol D. Roger</div>
-      <div class="char">Trafalgar Law</div>
-      <div class="char">Portgas D. Ace</div>
-      <div class="char">Boa Hancock</div>
-      <div class="char">Jinbe</div>
+  <!-- Galeria -->
+  <section id="galeria">
+    <h2>Galeria do Campo</h2>
+    <div class="image-grid">
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1625246333193-4a6c4e5f3d2b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Drone sobre plantação">
+        <p>Drone monitorando lavoura</p>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Plantação de soja">
+        <p>Campo de soja em alto rendimento</p>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1500595046743-5f8b8c4e8a0d?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Trator na fazenda">
+        <p>Máquinas modernas no campo</p>
+      </div>
+
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1585325701162-6d2c3f1b5e5c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Irrigação inteligente">
+        <p>Sistema de irrigação de precisão</p>
+      </div>
     </div>
   </section>
 
-  <section id="arcos" class="section">
-    <h2>Principais Arcos</h2>
-    <div class="arc-grid">
-      <div class="arc-card">East Blue</div>
-      <div class="arc-card">Alabasta</div>
-      <div class="arc-card">Skypiea</div>
-      <div class="arc-card">Water 7 / Enies Lobby</div>
-      <div class="arc-card">Thriller Bark</div>
-      <div class="arc-card">Marineford</div>
-      <div class="arc-card">Dressrosa</div>
-      <div class="arc-card">Wano (Melhor Arco)</div>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>Feito com ❤️ por um fã de One Piece • 2026</p>
-    <p>Este site é apenas para fãs • One Piece © Eiichiro Oda</p>
+    <p>&copy; 2026 IURE Agro • Tecnologia para o Agronegócio Brasileiro</p>
+    <p>
+      <i class="fab fa-github"></i> GitHub • 
+      <i class="fas fa-envelope"></i> contato@iureagro.com.br
+    </p>
   </footer>
 
   <script src="script.js"></script>
